@@ -4,11 +4,13 @@
   "description": "Ecommerce App",
   "main": "app.js",
   "scripts": {
-    "test": "jest"
-  },
+  "test": "jest",
+  "start": "node app.js"
+}
+,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jvlcode/shopeasy.git"
+    "url": "git+https://github.com/Abishekvarshan/ci.git"
   },
   "keywords": [],
   "author": "",
