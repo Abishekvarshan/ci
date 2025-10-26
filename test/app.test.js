@@ -1,13 +1,28 @@
 const request = require('supertest');
 const {app, server, name } = require('../app')
 
-describe('GET /', () => {
-    it("should return 200 status and the correct message", async() => {
-        const response = await request(app).get("/");
-        expect(response.status).toBe(200);
-        expect(response.text).toBe(`Welcome to ShopEasy from ${name}!`);
-    })
+
+
+describe('GET /',()=>{
+   it("should return 200 ststusand the correct message",async()=>{
+    const response = await request(app).get("/");
+    expect(response.status.toBe(200));
+    expect(response.text).toBe(`Welcome to ShopEasy from${name}!`)
+   })
+
 })
-afterAll(() => {
+
+afterAll(()=>{
     server.close();
 })
+
+// describe('GET /', () => {
+//     it("should return 200 status and the correct message", async() => {
+//         const response = await request(app).get("/");
+//         expect(response.status).toBe(200);
+//         expect(response.text).toBe(`Welcome to ShopEasy from ${name}!`);
+//     })
+// })
+// afterAll(() => {
+//     server.close();
+// })
