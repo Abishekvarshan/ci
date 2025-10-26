@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3000;
 const name = "CodeTest";
 
 app.get("/", (req, res) => {
-    const message = `i dont welcome to ShopEasy from ${name}!`
+    const message = `Welcome to ShopEasy from ${name}!`
     res.send(message);
 })
 
